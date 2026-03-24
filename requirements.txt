@@ -1,0 +1,17 @@
+transformers
+transformers[sentencepiece]
+datasets
+sacrebleu
+PyYAML
+torch
+matplotlib
+tqdm
+rouge_score
+py7zr
+pandas
+nltk
+boto3
+mypy-boto3-s3
+python-box==6.0.2
+ensure==1.0.2
+notebook
