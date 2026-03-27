@@ -23,7 +23,5 @@ def create_dir(list_of_paths:list,verbose=True):
     for files in list_of_paths:
         os.makedirs(os.path.dirname(files),exist_ok=True)
         logger.info(f'created the path {os.path.dirname(files)}')
-        with open(files,'w') as f:
-            f.write('created the file ')
-            logger.info(f'created file {files}')
+        
 

@@ -1,0 +1,8 @@
+main_root_dir: artifacts
+
+DataIngestion:
+  root_dir: artifacts/data_ingestion
+  source_url: 'samsum'
+  train_csv: artifacts/data_ingestion/train.csv
+  test_csv: artifacts/data_ingestion/test.csv
+  validation_csv: artifacts/data_ingestion/validation.csv
