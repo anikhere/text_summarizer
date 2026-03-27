@@ -1,1 +1,2 @@
-CONFIG_YAML= 'src\summarizer_model\yamls\config.yaml'
+from pathlib import Path
+CONFIG_YAML= Path('src\summarizer_model\yamls\config.yaml')

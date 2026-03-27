@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from pathlib import Path
 @dataclass
-class DataIngestionConfig:
+class DataIngestionArtifact:
     root_dir: Path
     source_url: str
     train_csv: str
