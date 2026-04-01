@@ -1,7 +1,8 @@
 from pathlib import Path
 from src.summarizer_model.utils.utils import Load_yaml,create_dir
-from src.summarizer_model.config.artifacts import DataIngestionArtifact
+from src.summarizer_model.config.artifacts import DataIngestionArtifact,ValidationArtifact
 from src.summarizer_model.constants.constants import CONFIG_YAML
+from src.summarizer_model.logging.logger import logger
 import os 
 
 class ConfigManager:
@@ -20,7 +21,26 @@ class ConfigManager:
             validation_csv=Path(config.validation_csv)
         )
         return dataingestconfig
-    
+   
+class ValidatorConfig:
+    def __init__(self):
+        self.config = Load_yaml(CONFIG_YAML)
+        logger.info(f'created the {self.config.main_root_dir}')
+        self.root_dir = os.makedirs(self.config.main_root_dir,exist_ok=True)
+     
+    def start_validation(self):
+        valid = self.config.DataValidation
+        os.makedirs(valid.validation_dir,exist_ok=True)
+        logger.info(f'created the {valid.validation_dir}')
+        logger.info(f'starting the validation----')
+        validation = ValidationArtifact(
+            valid_train_csv=Path(valid.valid_train_csv),
+            valid_test_csv=Path(valid.valid_test_csv),
+            root_dir=Path(valid.validation_dir),
+            valid_report=Path(valid.valid_report),
+            status = valid.valid_status
+        )
+        return validation
 
 
         

@@ -6,3 +6,11 @@ DataIngestion:
   train_csv: artifacts/data_ingestion/train.csv
   test_csv: artifacts/data_ingestion/test.csv
   validation_csv: artifacts/data_ingestion/validation.csv
+
+DataValidation:
+  validation_dir: artifacts/data_validation
+  valid_train_csv: artifacts/data_validation/valid_train.csv
+  valid_test_csv: artifacts/data_validation/valid_test.csv
+  valid_report: artifacts/data_validation/valid_report.json
+  valid_status: FALSE
+  
