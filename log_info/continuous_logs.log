@@ -401,3 +401,379 @@ dtype: int64]
 [2026-04-01 11:15:19,251: INFO: utils: created the path artifacts]
 [2026-04-01 11:15:19,252: INFO: valid: created the valid_dir]
 [2026-04-01 11:15:19,268: INFO: valid: now we are saving the csvs cleaned]
+[2026-04-03 22:39:59,322: INFO: main: started data_ingestion]
+[2026-04-03 22:39:59,322: INFO: utils: loaded the yaml file]
+[2026-04-03 22:39:59,341: INFO: utils: created the path artifacts]
+[2026-04-03 22:39:59,342: INFO: main: started the getting the artifacts]
+[2026-04-03 22:39:59,343: INFO: main: check your artifacts folder all good]
+[2026-04-03 22:39:59,886: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 22:40:00,231: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/stacked-summaries/stacked-samsum-1024/b186aa62836c86d22be8fba79a15e546e2b79d7d/README.md "HTTP/1.1 200 OK"]
+[2026-04-03 22:40:00,560: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:40:01,422: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/stacked-summaries/stacked-samsum-1024/stacked-summaries/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:40:01,877: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/revision/b186aa62836c86d22be8fba79a15e546e2b79d7d "HTTP/1.1 200 OK"]
+[2026-04-03 22:40:02,169: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:40:02,504: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=stacked-summaries/stacked-samsum-1024 "HTTP/1.1 200 OK"]
+[2026-04-03 22:40:02,895: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:40:03,186: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-04-03 22:40:04,055: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:40:04,511: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 22:40:08,954: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 22:40:09,278: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 22:40:09,611: INFO: utils: loaded the yaml file]
+[2026-04-03 22:40:09,611: INFO: config: created the artifacts]
+[2026-04-03 22:40:09,623: INFO: config: created the artifacts/data_validation]
+[2026-04-03 22:40:09,624: INFO: config: starting the validation----]
+[2026-04-03 22:40:12,610: INFO: valid: starting to check for nulls====]
+[2026-04-03 22:40:12,626: INFO: valid: the total nulls in train dialogue          1
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64 and total in test dialogue          0
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64]
+[2026-04-03 22:40:12,640: INFO: valid: now removing all the nulls]
+[2026-04-03 22:40:13,311: INFO: valid: started to generate the report]
+[2026-04-03 22:40:13,320: INFO: utils: created the path artifacts]
+[2026-04-03 22:40:13,321: INFO: valid: created the valid_dir]
+[2026-04-03 22:40:13,328: INFO: valid: now we are saving the csvs cleaned]
+[2026-04-03 22:40:17,847: INFO: main: now we are starting the transformation]
+[2026-04-03 22:40:17,868: INFO: utils: loaded the yaml file]
+[2026-04-03 22:40:17,871: INFO: config: created the artifacts]
+[2026-04-03 22:43:56,788: INFO: main: started data_ingestion]
+[2026-04-03 22:43:56,806: INFO: utils: loaded the yaml file]
+[2026-04-03 22:43:56,809: INFO: utils: created the path artifacts]
+[2026-04-03 22:43:56,810: INFO: main: started the getting the artifacts]
+[2026-04-03 22:43:56,811: INFO: main: check your artifacts folder all good]
+[2026-04-03 22:43:57,195: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 22:43:57,239: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/stacked-summaries/stacked-samsum-1024/b186aa62836c86d22be8fba79a15e546e2b79d7d/README.md "HTTP/1.1 200 OK"]
+[2026-04-03 22:43:57,640: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:43:58,449: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/stacked-summaries/stacked-samsum-1024/stacked-summaries/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:43:58,731: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/revision/b186aa62836c86d22be8fba79a15e546e2b79d7d "HTTP/1.1 200 OK"]
+[2026-04-03 22:43:58,989: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:43:59,327: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=stacked-summaries/stacked-samsum-1024 "HTTP/1.1 200 OK"]
+[2026-04-03 22:43:59,603: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:43:59,878: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-04-03 22:44:00,723: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:44:00,806: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 22:44:05,147: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 22:44:05,526: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 22:44:05,845: INFO: utils: loaded the yaml file]
+[2026-04-03 22:44:05,845: INFO: config: created the artifacts]
+[2026-04-03 22:44:05,860: INFO: config: created the artifacts/data_validation]
+[2026-04-03 22:44:05,862: INFO: config: starting the validation----]
+[2026-04-03 22:44:08,557: INFO: valid: starting to check for nulls====]
+[2026-04-03 22:44:08,575: INFO: valid: the total nulls in train dialogue          1
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64 and total in test dialogue          0
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64]
+[2026-04-03 22:44:08,579: INFO: valid: now removing all the nulls]
+[2026-04-03 22:44:09,222: INFO: valid: started to generate the report]
+[2026-04-03 22:44:09,223: INFO: utils: created the path artifacts]
+[2026-04-03 22:44:09,227: INFO: valid: created the valid_dir]
+[2026-04-03 22:44:09,232: INFO: valid: now we are saving the csvs cleaned]
+[2026-04-03 22:44:13,909: INFO: main: now we are starting the transformation]
+[2026-04-03 22:44:13,925: INFO: utils: loaded the yaml file]
+[2026-04-03 22:44:13,925: INFO: config: created the artifacts]
+[2026-04-03 22:49:16,963: INFO: main: started data_ingestion]
+[2026-04-03 22:49:17,004: INFO: utils: loaded the yaml file]
+[2026-04-03 22:49:17,008: INFO: utils: created the path artifacts]
+[2026-04-03 22:49:17,016: INFO: main: started the getting the artifacts]
+[2026-04-03 22:49:17,019: INFO: main: check your artifacts folder all good]
+[2026-04-03 22:49:17,451: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 22:49:17,503: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/stacked-summaries/stacked-samsum-1024/b186aa62836c86d22be8fba79a15e546e2b79d7d/README.md "HTTP/1.1 200 OK"]
+[2026-04-03 22:49:17,799: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:49:18,593: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/stacked-summaries/stacked-samsum-1024/stacked-summaries/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:49:18,882: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/revision/b186aa62836c86d22be8fba79a15e546e2b79d7d "HTTP/1.1 200 OK"]
+[2026-04-03 22:49:19,141: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:49:20,076: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=stacked-summaries/stacked-samsum-1024 "HTTP/1.1 200 OK"]
+[2026-04-03 22:49:20,349: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:49:21,059: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-04-03 22:49:21,793: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-04-03 22:49:21,883: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 22:49:26,741: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 22:49:27,088: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 22:49:27,438: INFO: utils: loaded the yaml file]
+[2026-04-03 22:49:27,442: INFO: config: created the artifacts]
+[2026-04-03 22:49:27,444: INFO: config: created the artifacts/data_validation]
+[2026-04-03 22:49:27,444: INFO: config: starting the validation----]
+[2026-04-03 22:49:30,555: INFO: valid: starting to check for nulls====]
+[2026-04-03 22:49:30,591: INFO: valid: the total nulls in train dialogue          1
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64 and total in test dialogue          0
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64]
+[2026-04-03 22:49:30,591: INFO: valid: now removing all the nulls]
+[2026-04-03 22:49:31,320: INFO: valid: started to generate the report]
+[2026-04-03 22:49:31,320: INFO: utils: created the path artifacts]
+[2026-04-03 22:49:31,320: INFO: valid: created the valid_dir]
+[2026-04-03 22:49:31,337: INFO: valid: now we are saving the csvs cleaned]
+[2026-04-03 22:49:36,167: INFO: main: now we are starting the transformation]
+[2026-04-03 22:49:36,187: INFO: utils: loaded the yaml file]
+[2026-04-03 22:49:36,188: INFO: config: created the artifacts]
+[2026-04-03 23:02:22,747: INFO: main: started data_ingestion]
+[2026-04-03 23:02:22,763: INFO: utils: loaded the yaml file]
+[2026-04-03 23:02:22,763: INFO: utils: created the path artifacts]
+[2026-04-03 23:02:22,770: INFO: main: started the getting the artifacts]
+[2026-04-03 23:02:22,771: INFO: main: check your artifacts folder all good]
+[2026-04-03 23:02:23,377: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 23:02:23,426: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/stacked-summaries/stacked-samsum-1024/b186aa62836c86d22be8fba79a15e546e2b79d7d/README.md "HTTP/1.1 200 OK"]
+[2026-04-03 23:02:23,725: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:02:24,582: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/stacked-summaries/stacked-samsum-1024/stacked-summaries/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:02:24,851: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/revision/b186aa62836c86d22be8fba79a15e546e2b79d7d "HTTP/1.1 200 OK"]
+[2026-04-03 23:02:25,125: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:02:25,558: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=stacked-summaries/stacked-samsum-1024 "HTTP/1.1 200 OK"]
+[2026-04-03 23:02:25,851: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:02:26,134: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-04-03 23:02:26,870: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:02:26,976: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 23:02:31,320: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 23:02:31,642: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 23:02:31,971: INFO: utils: loaded the yaml file]
+[2026-04-03 23:02:31,973: INFO: config: created the artifacts]
+[2026-04-03 23:02:31,978: INFO: config: created the artifacts/data_validation]
+[2026-04-03 23:02:31,979: INFO: config: starting the validation----]
+[2026-04-03 23:02:34,722: INFO: valid: starting to check for nulls====]
+[2026-04-03 23:02:34,743: INFO: valid: the total nulls in train dialogue          1
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64 and total in test dialogue          0
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64]
+[2026-04-03 23:02:34,743: INFO: valid: now removing all the nulls]
+[2026-04-03 23:02:35,332: INFO: valid: started to generate the report]
+[2026-04-03 23:02:35,350: INFO: utils: created the path artifacts]
+[2026-04-03 23:02:35,350: INFO: valid: created the valid_dir]
+[2026-04-03 23:02:35,355: INFO: valid: now we are saving the csvs cleaned]
+[2026-04-03 23:02:40,207: INFO: main: now we are starting the transformation]
+[2026-04-03 23:02:40,223: INFO: utils: loaded the yaml file]
+[2026-04-03 23:02:40,223: INFO: config: created the artifacts]
+[2026-04-03 23:09:07,550: INFO: main: started data_ingestion]
+[2026-04-03 23:09:07,564: INFO: utils: loaded the yaml file]
+[2026-04-03 23:09:07,567: INFO: utils: created the path artifacts]
+[2026-04-03 23:09:07,568: INFO: main: started the getting the artifacts]
+[2026-04-03 23:09:07,569: INFO: main: check your artifacts folder all good]
+[2026-04-03 23:09:08,200: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 23:09:08,244: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/stacked-summaries/stacked-samsum-1024/b186aa62836c86d22be8fba79a15e546e2b79d7d/README.md "HTTP/1.1 200 OK"]
+[2026-04-03 23:09:08,515: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:09:09,376: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/stacked-summaries/stacked-samsum-1024/stacked-summaries/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:09:09,642: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/revision/b186aa62836c86d22be8fba79a15e546e2b79d7d "HTTP/1.1 200 OK"]
+[2026-04-03 23:09:09,950: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:09:10,334: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=stacked-summaries/stacked-samsum-1024 "HTTP/1.1 200 OK"]
+[2026-04-03 23:09:10,615: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:09:10,902: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-04-03 23:09:11,632: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:09:11,903: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 23:09:16,296: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 23:09:16,666: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 23:09:17,010: INFO: utils: loaded the yaml file]
+[2026-04-03 23:09:17,010: INFO: config: created the artifacts]
+[2026-04-03 23:09:17,028: INFO: config: created the artifacts/data_validation]
+[2026-04-03 23:09:17,030: INFO: config: starting the validation----]
+[2026-04-03 23:09:19,892: INFO: valid: starting to check for nulls====]
+[2026-04-03 23:09:19,918: INFO: valid: the total nulls in train dialogue          1
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64 and total in test dialogue          0
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64]
+[2026-04-03 23:09:19,920: INFO: valid: now removing all the nulls]
+[2026-04-03 23:09:20,503: INFO: valid: started to generate the report]
+[2026-04-03 23:09:20,519: INFO: utils: created the path artifacts]
+[2026-04-03 23:09:20,520: INFO: valid: created the valid_dir]
+[2026-04-03 23:09:20,523: INFO: valid: now we are saving the csvs cleaned]
+[2026-04-03 23:09:25,081: INFO: main: now we are starting the transformation]
+[2026-04-03 23:09:25,081: INFO: utils: loaded the yaml file]
+[2026-04-03 23:09:25,081: INFO: config: created the artifacts]
+[2026-04-03 23:09:25,409: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 23:09:25,680: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-04-03 23:09:26,052: INFO: _client: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-04-03 23:09:26,443: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 23:09:26,718: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-04-03 23:09:26,973: INFO: _client: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-04-03 23:09:27,295: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:09:27,573: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-04-03 23:09:27,829: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/spiece.model "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 23:09:28,103: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/spiece.model "HTTP/1.1 200 OK"]
+[2026-04-03 23:09:28,582: INFO: _client: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/spiece.model "HTTP/1.1 200 OK"]
+[2026-04-03 23:09:29,249: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer.json "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:09:29,558: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:09:29,831: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 23:09:30,093: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/special_tokens_map.json "HTTP/1.1 200 OK"]
+[2026-04-03 23:09:30,371: INFO: _client: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/special_tokens_map.json "HTTP/1.1 200 OK"]
+[2026-04-03 23:09:30,660: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:10:48,725: INFO: main: started data_ingestion]
+[2026-04-03 23:10:48,754: INFO: utils: loaded the yaml file]
+[2026-04-03 23:10:48,768: INFO: utils: created the path artifacts]
+[2026-04-03 23:10:48,771: INFO: main: started the getting the artifacts]
+[2026-04-03 23:10:48,780: INFO: main: check your artifacts folder all good]
+[2026-04-03 23:10:49,250: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 23:10:49,274: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/stacked-summaries/stacked-samsum-1024/b186aa62836c86d22be8fba79a15e546e2b79d7d/README.md "HTTP/1.1 200 OK"]
+[2026-04-03 23:10:49,553: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:10:50,350: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/stacked-summaries/stacked-samsum-1024/stacked-summaries/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:10:50,616: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/revision/b186aa62836c86d22be8fba79a15e546e2b79d7d "HTTP/1.1 200 OK"]
+[2026-04-03 23:10:50,876: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:10:51,281: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=stacked-summaries/stacked-samsum-1024 "HTTP/1.1 200 OK"]
+[2026-04-03 23:10:51,531: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:10:51,802: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-04-03 23:10:52,735: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:10:52,822: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 23:10:57,154: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 23:10:57,478: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 23:10:57,936: INFO: utils: loaded the yaml file]
+[2026-04-03 23:10:57,937: INFO: config: created the artifacts]
+[2026-04-03 23:10:57,939: INFO: config: created the artifacts/data_validation]
+[2026-04-03 23:10:57,940: INFO: config: starting the validation----]
+[2026-04-03 23:11:01,401: INFO: valid: starting to check for nulls====]
+[2026-04-03 23:11:01,416: INFO: valid: the total nulls in train dialogue          1
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64 and total in test dialogue          0
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64]
+[2026-04-03 23:11:01,436: INFO: valid: now removing all the nulls]
+[2026-04-03 23:11:02,094: INFO: valid: started to generate the report]
+[2026-04-03 23:11:02,094: INFO: utils: created the path artifacts]
+[2026-04-03 23:11:02,094: INFO: valid: created the valid_dir]
+[2026-04-03 23:11:02,094: INFO: valid: now we are saving the csvs cleaned]
+[2026-04-03 23:11:06,876: INFO: main: now we are starting the transformation]
+[2026-04-03 23:11:06,892: INFO: utils: loaded the yaml file]
+[2026-04-03 23:11:06,892: INFO: config: created the artifacts]
+[2026-04-03 23:11:07,190: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 23:11:07,216: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-04-03 23:11:07,481: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 23:11:07,512: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-04-03 23:11:07,990: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:11:08,251: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-04-03 23:15:44,221: INFO: main: started data_ingestion]
+[2026-04-03 23:15:44,221: INFO: utils: loaded the yaml file]
+[2026-04-03 23:15:44,237: INFO: utils: created the path artifacts]
+[2026-04-03 23:15:44,237: INFO: main: started the getting the artifacts]
+[2026-04-03 23:15:44,237: INFO: main: check your artifacts folder all good]
+[2026-04-03 23:15:44,733: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 23:15:44,782: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/stacked-summaries/stacked-samsum-1024/b186aa62836c86d22be8fba79a15e546e2b79d7d/README.md "HTTP/1.1 200 OK"]
+[2026-04-03 23:15:45,084: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:15:45,929: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/stacked-summaries/stacked-samsum-1024/stacked-summaries/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:15:46,224: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/revision/b186aa62836c86d22be8fba79a15e546e2b79d7d "HTTP/1.1 200 OK"]
+[2026-04-03 23:15:46,524: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:15:46,964: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=stacked-summaries/stacked-samsum-1024 "HTTP/1.1 200 OK"]
+[2026-04-03 23:15:47,273: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:15:47,575: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-04-03 23:15:48,357: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:15:48,453: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 23:15:52,669: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 23:15:52,983: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-03 23:15:53,300: INFO: utils: loaded the yaml file]
+[2026-04-03 23:15:53,300: INFO: config: created the artifacts]
+[2026-04-03 23:15:53,316: INFO: config: created the artifacts/data_validation]
+[2026-04-03 23:15:53,317: INFO: config: starting the validation----]
+[2026-04-03 23:15:56,007: INFO: valid: starting to check for nulls====]
+[2026-04-03 23:15:56,029: INFO: valid: the total nulls in train dialogue          1
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64 and total in test dialogue          0
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64]
+[2026-04-03 23:15:56,034: INFO: valid: now removing all the nulls]
+[2026-04-03 23:15:56,618: INFO: valid: started to generate the report]
+[2026-04-03 23:15:56,618: INFO: utils: created the path artifacts]
+[2026-04-03 23:15:56,618: INFO: valid: created the valid_dir]
+[2026-04-03 23:15:56,625: INFO: valid: now we are saving the csvs cleaned]
+[2026-04-03 23:16:01,337: INFO: main: now we are starting the transformation]
+[2026-04-03 23:16:01,353: INFO: utils: loaded the yaml file]
+[2026-04-03 23:16:01,353: INFO: config: created the artifacts]
+[2026-04-03 23:16:01,728: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 23:16:01,791: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-04-03 23:16:02,082: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-03 23:16:02,136: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-04-03 23:16:02,416: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-03 23:16:02,730: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-04-03 23:16:03,573: INFO: transformation: now we are starting TransformStage]
+[2026-04-03 23:16:05,960: INFO: transformation: starting the tokenization]
+[2026-04-04 09:43:51,964: INFO: main: started data_ingestion]
+[2026-04-04 09:43:51,974: INFO: utils: loaded the yaml file]
+[2026-04-04 09:43:51,974: INFO: utils: created the path artifacts]
+[2026-04-04 09:43:51,974: INFO: main: started the getting the artifacts]
+[2026-04-04 09:43:51,974: INFO: main: check your artifacts folder all good]
+[2026-04-04 09:43:52,768: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-04 09:43:52,948: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/stacked-summaries/stacked-samsum-1024/b186aa62836c86d22be8fba79a15e546e2b79d7d/README.md "HTTP/1.1 200 OK"]
+[2026-04-04 09:43:53,540: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-04 09:43:55,514: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/stacked-summaries/stacked-samsum-1024/stacked-summaries/stacked-samsum-1024.py "HTTP/1.1 404 Not Found"]
+[2026-04-04 09:43:56,022: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/revision/b186aa62836c86d22be8fba79a15e546e2b79d7d "HTTP/1.1 200 OK"]
+[2026-04-04 09:43:56,597: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-04-04 09:43:58,672: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=stacked-summaries/stacked-samsum-1024 "HTTP/1.1 200 OK"]
+[2026-04-04 09:43:59,162: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-04 09:43:59,737: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/stacked-summaries/stacked-samsum-1024/tree/b186aa62836c86d22be8fba79a15e546e2b79d7d?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-04-04 09:44:00,753: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/stacked-summaries/stacked-samsum-1024/resolve/b186aa62836c86d22be8fba79a15e546e2b79d7d/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-04-04 09:44:01,120: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-04 09:44:06,114: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-04 09:44:06,500: INFO: utils: created the path artifacts\data_ingestion]
+[2026-04-04 09:44:06,924: INFO: utils: loaded the yaml file]
+[2026-04-04 09:44:06,933: INFO: config: created the artifacts]
+[2026-04-04 09:44:06,933: INFO: config: created the artifacts/data_validation]
+[2026-04-04 09:44:06,933: INFO: config: starting the validation----]
+[2026-04-04 09:44:09,932: INFO: valid: starting to check for nulls====]
+[2026-04-04 09:44:09,948: INFO: valid: the total nulls in train dialogue          1
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64 and total in test dialogue          0
+summary           0
+chapter_length    0
+summary_length    0
+is_stacked        0
+dtype: int64]
+[2026-04-04 09:44:09,956: INFO: valid: now removing all the nulls]
+[2026-04-04 09:44:10,686: INFO: valid: started to generate the report]
+[2026-04-04 09:44:10,694: INFO: utils: created the path artifacts]
+[2026-04-04 09:44:10,702: INFO: valid: created the valid_dir]
+[2026-04-04 09:44:10,710: INFO: valid: now we are saving the csvs cleaned]
+[2026-04-04 09:44:15,612: INFO: main: now we are starting the transformation]
+[2026-04-04 09:44:15,620: INFO: utils: loaded the yaml file]
+[2026-04-04 09:44:15,628: INFO: config: created the artifacts]
+[2026-04-04 09:44:18,128: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-04 09:44:18,260: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-04-04 09:44:18,634: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-04 09:44:18,760: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-04-04 09:44:19,227: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-04 09:44:19,636: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-04-04 09:44:20,401: INFO: transformation: now we are starting TransformStage]
+[2026-04-04 09:44:22,658: INFO: transformation: starting the tokenization]
+[2026-04-04 09:46:43,440: INFO: transformation: starting the tokenization]

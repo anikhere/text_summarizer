@@ -14,3 +14,8 @@ DataValidation:
   valid_report: artifacts/data_validation/valid_report.json
   valid_status: FALSE
   
+DataTransformation:
+  root_dir: artifacts/data_transformation
+  transformed_train_csv: artifacts/data_transformation/train.csv
+  transformed_test_csv: artifacts/data_transformation/test.csv
+  tokenizer_name: google/pegasus-cnn_dailymail

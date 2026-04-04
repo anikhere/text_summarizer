@@ -15,3 +15,10 @@ class ValidationArtifact:
     valid_test_csv:Path
     valid_report:Path
     status:bool
+
+@dataclass
+class DataTransArtifact:
+    root_dir:Path
+    transformed_train_csv:Path
+    transformed_test_csv:Path
+    tokenizer_name:Path

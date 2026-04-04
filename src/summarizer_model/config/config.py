@@ -1,6 +1,6 @@
 from pathlib import Path
 from src.summarizer_model.utils.utils import Load_yaml,create_dir
-from src.summarizer_model.config.artifacts import DataIngestionArtifact,ValidationArtifact
+from src.summarizer_model.config.artifacts import DataIngestionArtifact,ValidationArtifact,DataTransArtifact
 from src.summarizer_model.constants.constants import CONFIG_YAML
 from src.summarizer_model.logging.logger import logger
 import os 
@@ -42,6 +42,22 @@ class ValidatorConfig:
         )
         return validation
 
+class DataTransformationConfig:
+    def __init__(self):
+        self.config = Load_yaml(CONFIG_YAML)
+        logger.info(f'created the {self.config.main_root_dir}')
+        self.root_dir = os.makedirs(self.config.main_root_dir,exist_ok=True)
+
+    def get_transform(self):
+        trans = self.config.DataTransformation
+        os.makedirs(trans.root_dir,exist_ok=True)
+        trans_artifact = DataTransArtifact(
+            root_dir=Path(trans.root_dir),
+            transformed_train_csv =Path(trans.transformed_train_csv),
+            transformed_test_csv =Path(trans.transformed_test_csv),
+            tokenizer_name=trans.tokenizer_name
+        )
+        return trans_artifact
 
         
 
