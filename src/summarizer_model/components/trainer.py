@@ -7,8 +7,6 @@ from src.summarizer_model.constants.constants import *
 from src.summarizer_model.config.config import DataTransformationConfig,model_trainer
 from pathlib import Path
 import torch
-from src.summarizer_model.logging.logger import logger
-
 
 class ModelTrainer:
     def __init__(self, config:model_trainer, trans_art:DataTransArtifact):
@@ -23,7 +21,7 @@ class ModelTrainer:
         model_pegassus = AutoModelForSeq2SeqLM.from_pretrained(self.config.model_ckpt).to(device)
         seq_to_seq = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model_pegassus)
         trainer_args = TrainingArguments(
-            output_dir = 'pegasus-samsum', num_train_epochs=1,warmup_steps=500,
+            output_dir = self.params, num_train_epochs=1,warmup_steps=500,
             per_device_train_batch_size = 1,per_device_eval_batch_size = 1,
             weight_decay = 0.01,logging_steps=10,evaluation_strategy = 'steps',
             eval_steps = 500,save_steps=1e6,gradient_accumulation_steps = 16

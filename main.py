@@ -28,7 +28,8 @@ if __name__ == "__main__":
    transformed = transform.Transform()
    trainer = model_trainer()
    train_artifacts = trainer.get_model_artifact()
-   main_model = ModelTrainer(config=train_artifacts,trans_art=train_artifacts)
+   main_model = ModelTrainer(config=train_artifacts,trans_art=trans_artifacts)
+   main_model.train()
 
 
    
