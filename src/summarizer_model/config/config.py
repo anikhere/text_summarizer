@@ -1,7 +1,7 @@
 from pathlib import Path
 from src.summarizer_model.utils.utils import Load_yaml,create_dir
-from src.summarizer_model.config.artifacts import DataIngestionArtifact,ValidationArtifact,DataTransArtifact
-from src.summarizer_model.constants.constants import CONFIG_YAML
+from src.summarizer_model.config.artifacts import DataIngestionArtifact,ValidationArtifact,DataTransArtifact,TrainerArtifact
+from src.summarizer_model.constants.constants import CONFIG_YAML, PARAMS_YAML
 from src.summarizer_model.logging.logger import logger
 import os 
 
@@ -53,11 +53,31 @@ class DataTransformationConfig:
         os.makedirs(trans.root_dir,exist_ok=True)
         trans_artifact = DataTransArtifact(
             root_dir=Path(trans.root_dir),
-            transformed_train_csv =Path(trans.transformed_train_csv),
-            transformed_test_csv =Path(trans.transformed_test_csv),
+            transformed_train_path =Path(trans.transformed_train_csv),
+            transformed_test_path =Path(trans.transformed_test_csv),
             tokenizer_name=trans.tokenizer_name
         )
         return trans_artifact
+
+class model_trainer:
+    def __init__(self):
+       config_filepath = CONFIG_YAML
+       params_filepath = PARAMS_YAML
+
+       self.config = Load_yaml(CONFIG_YAML)
+       self.params = Load_yaml(PARAMS_YAML)
+       os.makedirs(self.config.main_root_dir,exist_ok=True)
+    
+    def get_model_artifact(self)-> TrainerArtifact:
+        config = self.config.ModelTrainer
+        params = self.params.TrainingArgument
+        os.makedirs(config.root_dir,exist_ok=True)
+        model_artifacts = TrainerArtifact(
+            root_dir=config.root_dir,
+            model_path=config.model_path,
+            model_cpkt=config.model_ckpt,
+        )
+        return model_artifacts
 
         
 

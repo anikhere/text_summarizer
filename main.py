@@ -1,10 +1,12 @@
 from src.summarizer_model.logging.logger import logger
 from src.summarizer_model.config.config import ConfigManager,ValidatorConfig,DataTransformationConfig
-from src.summarizer_model.config.artifacts import DataIngestionArtifact,ValidationArtifact,DataTransArtifact
+from src.summarizer_model.config.artifacts import DataIngestionArtifact,ValidationArtifact,DataTransArtifact,TrainerArtifact
 from src.summarizer_model.components.components import DataIngestion
 from src.summarizer_model.constants.constants import CONFIG_YAML
 from src.summarizer_model.components.valid import ValidationComponents
 from src.summarizer_model.components.transformation import DataTransform
+from src.summarizer_model.components.trainer import ModelTrainer
+from src.summarizer_model.config.config import model_trainer
 
 if __name__ == "__main__":
    logger.info('started data_ingestion')
@@ -24,5 +26,9 @@ if __name__ == "__main__":
    trans_artifacts = trans.get_transform()
    transform = DataTransform(config=trans_artifacts,dv = valid_artifacts)
    transformed = transform.Transform()
-   
+   trainer = model_trainer()
+   train_artifacts = trainer.get_model_artifact()
+   main_model = ModelTrainer(config=train_artifacts,trans_art=train_artifacts)
+
+
    

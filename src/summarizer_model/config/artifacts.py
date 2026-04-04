@@ -19,6 +19,13 @@ class ValidationArtifact:
 @dataclass
 class DataTransArtifact:
     root_dir:Path
-    transformed_train_csv:Path
-    transformed_test_csv:Path
+    transformed_train_path:Path
+    transformed_test_path:Path
     tokenizer_name:Path
+
+@dataclass
+class TrainerArtifact:
+    root_dir:Path
+    model_path:Path
+    model_cpkt:Path
+    
