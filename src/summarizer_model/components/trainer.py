@@ -26,7 +26,7 @@ class ModelTrainer:
             output_dir =str(self.config.root_dir)
             ,num_train_epochs=self.params.num_train_epochs,warmup_steps=self.params.warmup_steps,
             per_device_train_batch_size = self.params.per_device_train_batch_size,per_device_eval_batch_size = self.params.per_device_eval_batch_size,
-            weight_decay = self.params.weight_decay,logging_steps=self.params.logging_steps,evaluation_strategy = self.params.evaluation_strategy
+            weight_decay = self.params.weight_decay,logging_steps=self.params.logging_steps,eval_strategy= self.params.eval_strategy
 ,
             eval_steps = self.params.eval_steps,save_steps=self.params.save_steps,gradient_accumulation_steps = self.params.gradient_accumulation_steps
         )
