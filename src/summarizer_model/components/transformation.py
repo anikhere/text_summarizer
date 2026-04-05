@@ -19,7 +19,7 @@ class DataTransform:
         logger.info(f'starting the tokenization')
         input_encodes = self.tokenizer(
             [str(d) for d in example_batch['dialogue']],
-            max_length = 1024,
+            max_length = 512,
             truncation = True,
             padding = True
         )

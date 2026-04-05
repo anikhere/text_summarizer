@@ -17,6 +17,7 @@ class ModelTrainer:
 
         logger.info(f'starting the training phase now ')
     def train(self):
+        os.environ["CUDA_VISIBLE_DEVICES"] = "0"
         os.environ["PYTORCH_ALLOC_CONF"] = "expandable_segments:True"
         train_data = load_from_disk(self.dt.transformed_train_path)
         eval_data = load_from_disk(self.dt.transformed_test_path)
