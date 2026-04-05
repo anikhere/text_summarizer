@@ -30,6 +30,6 @@ if __name__ == "__main__":
    train_artifacts = trainer.get_model_artifact()
    main_model = ModelTrainer(config=train_artifacts,trans_art=trans_artifacts)
    main_model.train()
-
+   
 
    

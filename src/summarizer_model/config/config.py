@@ -79,5 +79,10 @@ class model_trainer:
         )
         return model_artifacts
 
+class ModelEvaluation:
+    def __init__(self):
+        pass
+        
+
         
 
