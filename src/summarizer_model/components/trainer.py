@@ -31,7 +31,7 @@ class ModelTrainer:
             eval_steps = self.params.eval_steps,save_steps=self.params.save_steps,gradient_accumulation_steps = self.params.gradient_accumulation_steps
         )
         trainer = Trainer(model = model_pegassus,args=trainer_args,
-                          tokenizer = tokenizer,data_collator = seq_to_seq,
+                          data_collator = seq_to_seq,
                           train_dataset = train_data,
                           eval_dataset = eval_data
                           )
