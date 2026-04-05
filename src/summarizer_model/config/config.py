@@ -82,7 +82,7 @@ class model_trainer:
 class ModelEvaluation:
     def __init__(self):
         pass
-        
+
 
         
 
