@@ -6,6 +6,7 @@ from src.summarizer_model.utils.utils import Load_yaml
 from src.summarizer_model.constants.constants import *
 from src.summarizer_model.config.config import DataTransformationConfig,model_trainer
 from pathlib import Path
+import os
 import torch
 
 class ModelTrainer:
@@ -16,6 +17,7 @@ class ModelTrainer:
 
         logger.info(f'starting the training phase now ')
     def train(self):
+        os.environ["PYTORCH_ALLOC_CONF"] = "expandable_segments:True"
         train_data = load_from_disk(self.dt.transformed_train_path)
         eval_data = load_from_disk(self.dt.transformed_test_path)
         device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -26,7 +28,7 @@ class ModelTrainer:
             output_dir =str(self.config.root_dir)
             ,num_train_epochs=self.params.num_train_epochs,warmup_steps=self.params.warmup_steps,
             per_device_train_batch_size = self.params.per_device_train_batch_size,per_device_eval_batch_size = self.params.per_device_eval_batch_size,
-            weight_decay = self.params.weight_decay,logging_steps=self.params.logging_steps,eval_strategy= self.params.eval_strategy
+            weight_decay = self.params.weight_decay,logging_steps=self.params.logging_steps,eval_strategy= self.params.eval_strategy,fp16= self.params.fp16
 ,
             eval_steps = self.params.eval_steps,save_steps=self.params.save_steps,gradient_accumulation_steps = self.params.gradient_accumulation_steps
         )
