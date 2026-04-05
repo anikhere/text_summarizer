@@ -27,5 +27,5 @@ class DataTransArtifact:
 class TrainerArtifact:
     root_dir:Path
     model_path:Path
-    model_cpkt:Path
+    model_ckpt:str
     

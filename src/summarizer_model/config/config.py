@@ -75,7 +75,7 @@ class model_trainer:
         model_artifacts = TrainerArtifact(
             root_dir=config.root_dir,
             model_path=config.model_path,
-            model_cpkt=config.model_ckpt,
+            model_ckpt=config.model_ckpt,
         )
         return model_artifacts
 
