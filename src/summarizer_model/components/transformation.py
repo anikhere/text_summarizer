@@ -29,10 +29,12 @@ class DataTransform:
            truncation= True,
            padding = True
     )
+        labels = target_encodes['input_ids']
+        labels =[ [(token if token != self.tokenizer.pad_token_id else -100) for token in label] for label in labels]
         return {
             'input_ids':input_encodes['input_ids'],
             'attention_mask':input_encodes['attention_mask'],
-            'labels': target_encodes['input_ids']
+            'labels': labels
         }        
         
     def Transform(self):
