@@ -24,3 +24,4 @@ ModelTrainer:
   root_dir: artifacts/model_trainer
   model_path: artifacts/model_trainer/model
   model_ckpt: google/pegasus-cnn_dailymail
+

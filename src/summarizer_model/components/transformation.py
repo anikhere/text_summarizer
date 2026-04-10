@@ -21,13 +21,13 @@ class DataTransform:
             [str(d) for d in example_batch['dialogue']],
             max_length = 512,
             truncation = True,
-            padding = 'max_lenght'
+            padding = 'max_length'
         )
         target_encodes = self.tokenizer(
            [str(s) for s in example_batch['summary']],
            max_length = 128,
            truncation= True,
-           padding = 'max_lenght'
+           padding = 'max_length'
     )
         labels = target_encodes['input_ids']
         labels =[ [(token if token != self.tokenizer.pad_token_id else -100) for token in label] for label in labels]
