@@ -21,13 +21,13 @@ class DataTransform:
             [str(d) for d in example_batch['dialogue']],
             max_length = 512,
             truncation = True,
-            padding = True
+            padding = 'max_lenght'
         )
         target_encodes = self.tokenizer(
            [str(s) for s in example_batch['summary']],
            max_length = 128,
            truncation= True,
-           padding = True
+           padding = 'max_lenght'
     )
         labels = target_encodes['input_ids']
         labels =[ [(token if token != self.tokenizer.pad_token_id else -100) for token in label] for label in labels]
@@ -56,7 +56,7 @@ class DataTransform:
        Dataset.from_dict(train_tokenized).save_to_disk(self.config.transformed_train_path)
        Dataset.from_dict(test_tokenized).save_to_disk(self.config.transformed_test_path)
        return train_tokenized,test_tokenized
-
+       
         
 
 

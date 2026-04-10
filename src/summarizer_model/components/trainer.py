@@ -40,7 +40,8 @@ class ModelTrainer:
                           )
         logger.info(f'everything set good for the training phase')
         trainer.train()
-        model_pegassus.save_pretrained(self.config.model_path)
-        tokenizer.save_pretrained(self.config.model_path)
+        save_path = '/kaggle/working/pegasus_model'
+        model_pegassus.save_pretrained(save_path)
+        tokenizer.save_pretrained(save_path)
         logger.info(f'Model saved at {self.config.model_path}')
         
