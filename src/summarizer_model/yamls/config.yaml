@@ -18,10 +18,10 @@ DataTransformation:
   root_dir: artifacts/data_transformation
   transformed_train_csv: artifacts/data_transformation/train
   transformed_test_csv: artifacts/data_transformation/test
-  tokenizer_name: google/pegasus-cnn_dailymail
+  tokenizer_name: google/pegasus-xsum
 
 ModelTrainer:
   root_dir: artifacts/model_trainer
   model_path: artifacts/model_trainer/model
-  model_ckpt: google/pegasus-cnn_dailymail
+  model_ckpt: google/pegasus-xsum
 
