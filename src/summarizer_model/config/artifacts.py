@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from os import path
 from pathlib import Path
 @dataclass
 class DataIngestionArtifact:
@@ -28,4 +29,11 @@ class TrainerArtifact:
     root_dir:Path
     model_path:Path
     model_ckpt:str
-    
+
+@dataclass
+class ModelEvaluate:
+    root_dir:Path
+    model_path:Path
+    tokenizer_name:str
+    transformed_test_path:Path
+    metric_file:Path

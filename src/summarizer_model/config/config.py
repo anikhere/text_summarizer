@@ -1,6 +1,8 @@
 from pathlib import Path
+
+from mlflow import evaluate
 from src.summarizer_model.utils.utils import Load_yaml,create_dir
-from src.summarizer_model.config.artifacts import DataIngestionArtifact,ValidationArtifact,DataTransArtifact,TrainerArtifact
+from src.summarizer_model.config.artifacts import DataIngestionArtifact, ModelEvaluate,ValidationArtifact,DataTransArtifact,TrainerArtifact
 from src.summarizer_model.constants.constants import CONFIG_YAML, PARAMS_YAML
 from src.summarizer_model.logging.logger import logger
 import os 
@@ -81,7 +83,21 @@ class model_trainer:
 
 class ModelEvaluation:
     def __init__(self):
-        pass
+        config = Load_yaml(CONFIG_YAML)
+        os.makedirs(config.main_root_dir,exist_ok=True)
+
+    def get_eval_artifacts(self)->ModelEvaluate:
+        config = config.ModelEvaluation
+        trans = config.DataTransformation
+        os.makedirs(config.root_dir)
+        evaluate_artifact = ModelEvaluate(
+            root_dir=Path(config.root_dir),
+            model_path = Path(config.model_path),
+            tokenizer_name=str(config.tokenizer_name),
+            transformed_test_path=Path(trans.transformed_test_csv),
+            metric_file=Path(config.metric_file)
+        )
+
 
 
         

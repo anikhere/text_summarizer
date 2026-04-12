@@ -25,3 +25,8 @@ ModelTrainer:
   model_path: artifacts/model_trainer/model
   model_ckpt: google/pegasus-xsum
 
+ModelEvaluation:
+  root_dir: artifacts/model_evaluation
+  model_path: tahaAnik/pegasus-samsum
+  tokenizer_name: tahaAnik/pegasus-samsum
+  metric_file: artifacts/model_evaluation/metrics.csv
